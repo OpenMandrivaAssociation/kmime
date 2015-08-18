@@ -29,6 +29,7 @@ KDE library for handling MIME types
 %package -n %{libname}
 Summary: KDE library for handling MIME types
 Group: System/Libraries
+Obsoletes: %{mklibname kmime 4}
 
 %description -n %{libname}
 KDE library for handling MIME types
