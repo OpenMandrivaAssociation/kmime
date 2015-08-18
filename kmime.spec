@@ -17,6 +17,11 @@ URL: http://kde.org/
 License: GPL
 Group: System/Libraries
 BuildRequires: cmake
+BuildRequires: ninja
+BuildRequires: cmake(ECM)
+BuildRequires: cmake(KF5Codecs)
+BuildRequires: cmake(KF5I18n)
+BuildRequires: cmake(Qt5Core)
 
 %description
 KDE library for handling MIME types
