@@ -22,6 +22,7 @@ BuildRequires: cmake(ECM)
 BuildRequires: cmake(KF5Codecs)
 BuildRequires: cmake(KF5I18n)
 BuildRequires: cmake(Qt5Core)
+BuildRequires: cmake(Qt5Test)
 BuildRequires: boost-devel
 
 %description
