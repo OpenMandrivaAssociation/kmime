@@ -10,7 +10,7 @@ Version:	15.08.1
 %else
 %define ftpdir stable
 %endif
-Release:	1
+Release:	2
 Source0: http://download.kde.org/%{ftpdir}/applications/%{version}/src/%{name}-%{version}.tar.xz
 Summary: KDE library for handling MIME types
 URL: http://kde.org/
@@ -31,7 +31,6 @@ KDE library for handling MIME types
 %package -n %{libname}
 Summary: KDE library for handling MIME types
 Group: System/Libraries
-Obsoletes: %{mklibname kmime 4}
 
 %description -n %{libname}
 KDE library for handling MIME types
