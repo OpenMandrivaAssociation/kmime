@@ -25,6 +25,9 @@ BuildRequires: cmake(KF5I18n)
 BuildRequires: cmake(Qt5Core)
 BuildRequires: cmake(Qt5Test)
 BuildRequires: boost-devel
+# For QCH format docs
+BuildRequires: doxygen
+BuildRequires: qt5-assistant
 
 %description
 KDE library for handling MIME types
