@@ -3,14 +3,14 @@
 %define devname %mklibname KF5Mime -d
 
 Name: kmime
-Version:	22.12.3
+Version:	23.03.90
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
 %else
 %define ftpdir stable
 %endif
-Release:	2
+Release:	1
 Source0: http://download.kde.org/%{ftpdir}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 Summary: KDE library for handling MIME types
 URL: http://kde.org/
@@ -57,6 +57,9 @@ Development files (Headers etc.) for %{name}.
 
 %install
 %ninja_install -C build
+
+ln -s ../KF5Mime/KPim5MimeQchTargets.cmake %{buildroot}%{_libdir}/cmake/KPim5Mime/
+
 %find_lang libkmime5
 
 %files -f libkmime5.lang
