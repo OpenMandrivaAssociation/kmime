@@ -3,7 +3,7 @@
 %define devname %mklibname KF5Mime -d
 
 Name: kmime
-Version:	23.03.90
+Version:	23.04.0
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
@@ -57,8 +57,6 @@ Development files (Headers etc.) for %{name}.
 
 %install
 %ninja_install -C build
-
-ln -s ../KF5Mime/KPim5MimeQchTargets.cmake %{buildroot}%{_libdir}/cmake/KPim5Mime/
 
 %find_lang libkmime5
 
